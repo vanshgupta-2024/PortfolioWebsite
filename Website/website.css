@@ -1,0 +1,319 @@
+body {
+    background-image: url("Background.png");  
+      }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri', sans-serif;
+} 
+html {
+    scroll-behavior: smooth;
+    }
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  box-shadow: 0px 2px 5px white;
+  position: fixed;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.MeriShakal{
+    text-align: center;
+    padding-top: 14%;
+}
+.intro{
+  padding-top: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.Name{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: #f1e7e7;
+  font-size: 80px;
+}
+.name{
+    color:  #BB86FC;
+}
+.aboutme{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    color: white;
+    border-radius: 30px;
+    font-size: 67px;
+    margin-right: 20%;
+}   
+.AboutMe{
+    padding: 3%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50px;
+}
+.hobby{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    color: rgb(238, 237, 224);
+    border-radius: 30px;
+    font-size: 67px;
+    margin-right: 20%;
+}
+ul{
+    list-style-type: none;
+}
+.Hobbies{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 550px;
+    height: 450px;
+    opacity: 70%;
+    background-color: white;
+    border-radius: 50px;
+
+}
+.hb{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+    font-size: 60px;
+    font-weight: 1000;
+}
+.Skills{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: #f1e7e7;
+    font-size: 67px;
+}
+.myskill{
+    position: absolute;
+    top: 55%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 60px;
+    font-weight: 900;
+
+}
+table,td,th {
+    border: 3px solid white;
+    border-radius: 20%;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 130%;
+    
+  }
+  
+  th {
+    height: 80px;
+  }
+.Gmail{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: #f1f7f5;
+}
+.Mail{
+    font-size: 50px;
+}
+.mail{
+    font-size: 40px;
+}
+.Phone{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: #f1f7f5;    
+}
+.Number{
+    font-size: 50px;
+}
+.number{
+    font-size: 40px;
+}
+.Instagram{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.Instagram:hover{
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.LinkedIn{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+.LinkedIn:hover{
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+.Github{
+    position: absolute;
+    top: 45.6%;
+    left: 50%;
+}
+.Github:hover{
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 45.6%;
+    left: 50%;
+}
+.Twitter{
+    position: absolute;
+    top: 45.5%;
+    left: 65%;
+}
+.Twitter:hover{
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 45.5%;
+    left: 65%;
+}
+.Facebook{
+    position: absolute;
+    top: 45.5%;
+    left: 80%;
+}
+.Facebook:hover{
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 45.5%;
+    left: 80%;
+}
